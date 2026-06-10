@@ -1,17 +1,23 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ControladorMacas : MonoBehaviour
 {
 
-    public TextMeshProUGUI texto;
+    public TextMeshProUGUI text;
 
-    private int macas = 0;
+    int macas = 0;
+
+    void Start()
+    {
+        text.SetText("0");
+    }
 
     public void AdicionaMaca()
     {
         macas++;
-        texto.SetText(macas.ToString());
+        text.SetText("" + macas);
     }
 
 }

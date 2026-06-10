@@ -16,7 +16,7 @@ public class ControladorJogador : MonoBehaviour
 
     private void Update()
     {
-        var horizontal = Input.GetAxis("Vertical");
+        var horizontal = Input.GetAxis("Horizontal");
         var velocity = rb.linearVelocity;
         velocity.x = horizontal * speed;
         
@@ -31,7 +31,7 @@ public class ControladorJogador : MonoBehaviour
 
         if (noChao && Input.GetButtonDown("Jump"))
         {
-            velocity.y = 0f;
+            velocity.y = 4f;
             rb.linearVelocity = velocity;
             rb.AddForce(Vector2.up * jumpForce);
             animator.SetTrigger("Pular");

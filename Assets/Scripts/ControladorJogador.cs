@@ -9,18 +9,18 @@ public class ControladorJogador : MonoBehaviour
     public SpriteRenderer spriteRenderer;
     public AudioSource audioSource;
     public float speed;
-    public float jumpForce;
+    public float jumpForce = 12f;
 
     private bool olhandoParaDireita = true;
     private bool noChao = false;
 
     private void Update()
     {
-        var horizontal = Input.GetAxis("Vertical");
+        var horizontal = Input.GetAxis("Horizontal");
         var velocity = rb.linearVelocity;
         velocity.x = horizontal * speed;
         
-        animator.SetFloat("yVelocidade", velocity.y);
+        animator.SetFloat("Velocidade", velocity.y);
         animator.SetBool("Correndo", horizontal != 0f);
 
         noChao = Physics2D.Raycast(transform.position, Vector2.down, 1.2f, layerChao);

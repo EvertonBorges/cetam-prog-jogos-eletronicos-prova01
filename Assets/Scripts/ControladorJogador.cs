@@ -16,7 +16,7 @@ public class ControladorJogador : MonoBehaviour
 
     private void Update()
     {
-        var horizontal = Input.GetAxis("Vertical");
+        var horizontal = Input.GetAxis("Horizontal");
         var velocity = rb.linearVelocity;
         velocity.x = horizontal * speed;
         
@@ -30,7 +30,8 @@ public class ControladorJogador : MonoBehaviour
         rb.linearVelocity = velocity;
 
         if (noChao && Input.GetButtonDown("Jump"))
-        {
+        { 
+            
             velocity.y = 0f;
             rb.linearVelocity = velocity;
             rb.AddForce(Vector2.up * jumpForce);

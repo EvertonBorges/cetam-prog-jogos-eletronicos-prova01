@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class ControladorMenuPrincipal : MonoBehaviour
 {
-    
+
     public void BTN_Jogar()
     {
         SceneManager.LoadScene("SCN_Level_01");

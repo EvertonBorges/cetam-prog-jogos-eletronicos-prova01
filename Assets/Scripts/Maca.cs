@@ -1,4 +1,8 @@
+using System.Security.AccessControl;
 using UnityEngine;
+
+
+
 
 public class Maca : MonoBehaviour
 {
@@ -9,7 +13,10 @@ public class Maca : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            
+            controladorUIMacas.AdicionaMaca();
             Destroy(gameObject);
+            
         }
     }
     

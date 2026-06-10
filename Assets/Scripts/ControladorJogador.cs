@@ -16,7 +16,7 @@ public class ControladorJogador : MonoBehaviour
 
     private void Update()
     {
-        var horizontal = Input.GetAxis("Vertical");
+        var horizontal = Input.GetAxis("Horizontal");
         var velocity = rb.linearVelocity;
         velocity.x = horizontal * speed;
         

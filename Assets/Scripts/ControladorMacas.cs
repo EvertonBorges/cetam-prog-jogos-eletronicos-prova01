@@ -1,8 +1,12 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.Audio;
+
+
 
 public class ControladorMacas : MonoBehaviour
 {
+    public AudioSource audioSource;
 
     public TextMeshProUGUI texto;
 
@@ -12,6 +16,8 @@ public class ControladorMacas : MonoBehaviour
     {
         macas++;
         texto.SetText(macas.ToString());
+        audioSource.Play();
+
     }
 
 }

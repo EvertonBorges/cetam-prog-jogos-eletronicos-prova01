@@ -9,6 +9,7 @@ public class Maca : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+           controladorUIMacas.AdicionaMaca();
             Destroy(gameObject);
         }
     }

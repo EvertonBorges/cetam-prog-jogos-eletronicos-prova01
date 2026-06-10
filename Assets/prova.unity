@@ -18119,7 +18119,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 8
+  m_GravityScale: 10
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -18151,7 +18151,7 @@ MonoBehaviour:
   spriteRenderer: {fileID: 2098437126}
   audioSource: {fileID: 1374064440}
   speed: 12
-  jumpForce: 2000
+  jumpForce: 2200
 --- !u!95 &2098437132
 Animator:
   serializedVersion: 7

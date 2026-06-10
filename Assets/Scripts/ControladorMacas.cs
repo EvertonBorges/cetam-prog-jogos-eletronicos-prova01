@@ -12,6 +12,7 @@ public class ControladorMacas : MonoBehaviour
     {
         macas++;
         texto.SetText(macas.ToString());
+        
     }
 
 }

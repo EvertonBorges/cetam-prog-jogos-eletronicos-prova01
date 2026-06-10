@@ -1178,7 +1178,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1349727964}
         m_TargetAssemblyTypeName: ControladorMenuPrincipal, Assembly-CSharp
-        m_MethodName: BTN_Sair
+        m_MethodName: BTN_Creditos
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

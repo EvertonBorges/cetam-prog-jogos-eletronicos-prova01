@@ -20,4 +20,9 @@ public class ControladorMenuPrincipal : MonoBehaviour
         SceneManager.LoadScene("SCN_Creditos");
     }
 
+    public void BTN_Menu()
+    {
+        SceneManager.LoadScene("SCN_MenuPrincipal");
+    }
+
 }

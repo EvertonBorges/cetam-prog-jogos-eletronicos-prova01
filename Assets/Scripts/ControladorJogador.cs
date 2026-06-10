@@ -9,14 +9,15 @@ public class ControladorJogador : MonoBehaviour
     public SpriteRenderer spriteRenderer;
     public AudioSource audioSource;
     public float speed;
-    public float jumpForce;
+    public float jumpForce = 12;
 
     private bool olhandoParaDireita = true;
     private bool noChao = false;
+    
 
     private void Update()
     {
-        var horizontal = Input.GetAxis("Vertical");
+        var horizontal = Input.GetAxis("Horizontal"); // fiz a correção aqui professor;
         var velocity = rb.linearVelocity;
         velocity.x = horizontal * speed;
         

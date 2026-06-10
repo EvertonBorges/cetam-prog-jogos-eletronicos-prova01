@@ -10,13 +10,12 @@ public class ControladorJogador : MonoBehaviour
     public AudioSource audioSource;
     public float speed;
     public float jumpForce;
-
     private bool olhandoParaDireita = true;
     private bool noChao = false;
 
     private void Update()
     {
-        var horizontal = Input.GetAxis("Vertical");
+        var horizontal = Input.GetAxis("Horizontal");
         var velocity = rb.linearVelocity;
         velocity.x = horizontal * speed;
         
